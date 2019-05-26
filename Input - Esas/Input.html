@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12">
+                <form id="registr" action="">
+
+                    <div class="form-group">
+                        <label for="username"> Please enter your : Usernanme </label>
+                        <!-- oninvalid="this.setCustomValidity('Rica edirem adinizi yazin !!!')" -->
+                        <input class="form-control  required" type="text" id="username" name="username" data-msg="Zehmet Adinizi daxil edin"
+                            autocomplete="off" placeholder="Adinizi daxil edin">
+
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Seherler</label>
+                        <select class="form-control" id="city">
+                            <option selected>seher Secin</option>
+                            <!--value="Seki"-->
+                            <option value="1">Baki</option>
+                            <!--value="Baki"-->
+                            <option value="2">Seki</option>
+                            <!--value="Seki"-->
+                            <option value="3">Sumqayit</option>
+                            <!--value="Sumqayit"-->
+                            <option value="4">Xirdalan</option>
+                            <!--value="Xirdalan"-->
+                            <option value="5">Novxani</option>
+                            <!--value="Novxani"-->
+                        </select>
+                    </div>
+
+                    <div class="form-group d-none">
+                        <label for="">Regionlar </label>
+                        <select class="form-control" id="region">
+                            <option>Masdaga</option>
+                            <!--value="Masdaga"-->
+                            <option>Pirsagi</option>
+                            <!--value="Pirsagi"-->
+                            <option>Nardaran</option>
+                            <!--value="Nardaran"-->
+                            <option>Pirallahi</option>
+                            <!--value="Pirallahi"-->
+
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="surname">Please enter your : Surname </label>
+                        <!-- oninvalid="this.setCustomValidity('Rica edirem adinizi yazin !!!')" -->
+                        <input class="form-control required" type="text" id="surname" name="surname" data-msg="Zehmet olmasa Soyadinizi daxil edin"
+                            autocomplete="off" placeholder="Soyadinizi daxil edin">
+                    </div>
+
+                    <!-- --------------------------------------------------------email bolumu ------------------------------------------------------- -->
+                    <div class="form-group">
+                        <label for="email"> Please enter your : email </label>
+                        <!-- oninvalid="this.setCustomValidity('Rica edirem adinizi yazin !!!')" -->
+                        <input class="form-control  required" type="email" id="email" name="emailaddress" data-msg="Zehmet olmasa emailinizi daxil edin"
+                            autocomplete="off" placeholder="Emailinizi daxil edin" data-succesEmail="Login duzgun yazilis formasindadir ">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email_password"> Please enter your : email password </label>
+                        <!-- oninvalid="this.setCustomValidity('Rica edirem adinizi yazin !!!')" -->
+                        <input class="form-control  required" type="password" id="email_password" name="email_password"
+                            data-msg="Zehmet email parolunuzu daxil edin" data-erroremail="Email Password 8 simvoldan az olmamalidir"
+                            autocomplete="off" placeholder="Email parolyunuzu daxil edin">
+                    </div>
+                    <!-- ---------------------------------------------------------------------------------------------- -->
+                    <div class="form-group">
+                        <label for="password">Please enter your : Password: </label>
+                        <!-- oninvalid="this.setCustomValidity('Rica edirem adinizi yazin !!!')" -->
+                        <input class="form-control required" type="password" id="password" name="password" data-msg="Zehmet Parolunuzu daxil edin"
+                            autocomplete="off" placeholder="Parolunuzu daxil edin" data-error="Parolunuz 6 simvoldan az olmamalidir">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="password_confirm">Please repeat your : Password for confirm</label>
+                        <!-- oninvalid="this.setCustomValidity('Rica edirem adinizi yazin !!!')" -->
+
+                        <input class="form-control required" type="password" id="password_confirm" name="password_confirm"
+                            data-msg="Zehmet olmasa Parolunuzu daxil edin" data-succes="Parol eynilesmesi ugurla yerine yetirildi"
+                            data-error="Parol eynilesmesi yerine yetirilmedi" autocomplete="off" placeholder="Parolunuzu duzgun daxil edin">
+                    </div>
+
+                    <button class="btn btn-success">Tesdiqleyin</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
